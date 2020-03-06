@@ -40,5 +40,5 @@ dynamic py = engine.ExecuteFile (Application.dataPath + @"\StreamingAssets" + @"
 
 dynamic test = py.Test ("Codemaker");
 greeting.text = "Greeting: " + test.display ();
-randomNumber.text = "Random Number: " + test.random\_number (1, 5);
+randomNumber.text = "Random Number: " + test.random_number (1, 5);
 ```
