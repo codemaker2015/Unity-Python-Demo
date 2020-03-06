@@ -18,7 +18,7 @@ class Test():
 	def display(self):
 		return "Hi, " + self.name
 
-	def random\_number(self, start, end):
+	def random_number(self, start, end):
 		return random.randint(start, end)
 ```
 
@@ -27,7 +27,7 @@ You can use it from C# like this
 
 ```csharp
 var engine = Python.CreateEngine ();
-ICollection\<string\> searchPaths = engine.GetSearchPaths ();
+ICollection<string> searchPaths = engine.GetSearchPaths ();
 
 //Path to the folder of greeter.py
 searchPaths.Add (Application.dataPath);
