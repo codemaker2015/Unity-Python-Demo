@@ -4,7 +4,12 @@ First you will have to download IronPython dll files and place them into Assets/
 
 IronPython requires .NET 4.5, and Unity doesn&#39;t like this by default. That&#39;s why you will have to change the .NET version by going to Edit --> Project Settings --> Player. Make sure that the Scripting Runtime Version is .NET 4.x (this requires you to restart Unity) and that API Compatibility level is .NET 4.x
 
-# How to code in Python
+## Requirements
+
+* Unity 2018.2.20f1
+* [Unity Python](https://github.com/exodrifter/unity-python/releases "unity-python")
+
+## How to code in Python
 
 Assume you have a small code snippet **test.py** in Python like this:
 
@@ -42,3 +47,7 @@ dynamic test = py.Test ("Codemaker");
 greeting.text = "Greeting: " + test.display ();
 randomNumber.text = "Random Number: " + test.random_number (1, 5);
 ```
+
+## Output
+
+![screenshot](https://github.com/codemaker2015/Unity-Python-Demo/blob/master/Screenshots/screenshot.png)
