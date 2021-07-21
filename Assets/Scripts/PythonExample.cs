@@ -18,7 +18,7 @@ public class PythonExample : MonoBehaviour
 		ICollection<string> searchPaths = engine.GetSearchPaths ();
 
 		#if UNITY_STANDALONE_WIN
-			//Path to the folder of greeter.py
+			//Path to the folder of test.py
 			searchPaths.Add (Application.dataPath);
 			//Path to the Python standard library
 			searchPaths.Add (Application.dataPath + @"\StreamingAssets"  + @"\Lib\");
@@ -31,7 +31,7 @@ public class PythonExample : MonoBehaviour
 			randomNumber.text = "Random Number: " + test.random_number (1, 5);
 		#endif
 		#if UNITY_ANDROID
-			//Path to the folder of greeter.py
+			//Path to the folder of test.py
 			searchPaths.Add (Application.persistentDataPath);
 			//Path to the Python standard library
 			searchPaths.Add (Application.persistentDataPath + @"\Lib\");
